@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Cordviews`}
+      title={`Home`}
       description="Cordviews is a Discord platform for users of Discord to find a server to join with trusted reviews, and trusted feedback for server admins.">
       <HomepageHeader />
       <main>
