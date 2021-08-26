@@ -1,7 +1,7 @@
 {
   "name": "cordviews-website",
-  "version": "1.0.0",
-  "description": "The official documentation and guide of Cordviews - Discord Trusted Reviews",
+  "version": "0.0.0",
+  "description": "The official website of Cordviews - Discord Trusted Reviews & Feedback",
   "repository": "https://github.com/cordviews/cordviews-website",
   "author": "GodderE2D <main@godder.ga>",
   "license": "Apache-2.0",
