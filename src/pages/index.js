@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Cordviews`}
-      description="Cordviews is a Discord platform for users of Discord to find a server to join with **trusted reviews**, and **trusted feedback** for server admins.">
+      description="Cordviews is a Discord platform for users of Discord to find a server to join with trusted reviews, and trusted feedback for server admins.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
