@@ -3,34 +3,69 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Cordviews',
+  tagline: 'Cordviews is a Discord platform for users of Discord to find a server to join with trusted reviews, and trusted feedback for server admins.',
+  url: 'https://www.cordviews.tk',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/logo.png',
+  organizationName: 'cordviews',
+  projectName: 'cordviews-website',
   themeConfig: {
+    announcementBar: {
+      id: 'announcementBar',
+      content:
+        "<div>Welcome to Cordviews! Here's a free <strong>one-time</strong> use invite key: <code>website</code></div>",
+      backgroundColor: '#5865f2',
+      textColor: '#fff',
+      isCloseable: true,
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Cordviews',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Cordviews Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          to: '/guide/getting-started',
+          position: 'left',
+          label: 'Guide',
+        },
+        {
+          to: '/blog',
+          label: 'Blog',
+          position: 'left'
+        },
+        {
+          to: '/ban-appeal',
+          label: 'Ban Appeal',
+          position: 'left',
+        },
+        {
+          href: '/invite',
+          target: '_blank',
+          label: 'Invite',
           position: 'right',
+        },
+        {
+          href: '/discord',
+          target: '_blank',
+          label: 'Discord',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/cordviews/cordviews',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'Bot GitHub Repository',
         },
       ],
     },
@@ -38,11 +73,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Website',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentation',
               to: '/docs/intro',
+            },
+            {
+              label: 'Guide',
+              to: '/guide/getting-started',
             },
           ],
         },
@@ -50,38 +89,41 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://cordviews.tk/discord',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              html: `
+                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+                </a>
+              `,
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Developement',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Bot GitHub',
+              href: 'https://github.com/cordviews/cordviews'
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Website GitHub',
+              href: 'https://github.com/cordviews/cordviews-website',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cordviews`,
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
     },
   },
   presets: [
@@ -89,21 +131,46 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/cordviews/cordviews-website/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/facebook/docusaurus/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'guide',
+        path: 'guide',
+        routeBasePath: 'guide',
+        sidebarPath: require.resolve('./guide-sidebars.js'),
+        editUrl:
+          'https://github.com/cordviews/cordviews-website/edit/main/',
+      },
+    ],
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+      },
+    ],
+  ],
+  scripts: [
+    {
+      src: 'https://arc.io/widget.min.js#dPFzDXgZ',
+      async: true,
+    },
   ],
 };

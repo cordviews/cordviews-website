@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/arc-sw.js"
+  to = "https://arc.io/arc-sw.js"
+  status = 200
+
+[[redirects]]
+  from = "/discord"
+  to = "data:text/plain;base64,U29vblRN"
+  status = 301
+
+[[redirects]]
+  from = "/invite"
+  to = "data:text/plain;base64,U29vblRN"
+  status = 301

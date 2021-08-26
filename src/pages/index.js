@@ -13,13 +13,14 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <div className={styles.indexCtas}>
+              <Link className="button button--outline button--secondary button--lg" href="/invite" target="_blank">
+                Invite to Server
+              </Link>
+              <Link className="button button--outline button--secondary button--lg" href="/discord" target="_blank">
+                Join Discord
+              </Link>
+            </div>
       </div>
     </header>
   );
@@ -29,11 +30,13 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Cordviews`}
+      description="Cordviews is a Discord platform for users of Discord to find a server to join with **trusted reviews**, and **trusted feedback** for server admins.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <h3 className="center"><strong>Cordviews is also open source, encouraging transparency and endless possibilities, such as self-hosting.</strong></h3>
+        <br />
       </main>
     </Layout>
   );

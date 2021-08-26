@@ -4,32 +4,26 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Trusted Reviews',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Instead of having reviews from random sources, you get one or two reviews tailored for your server <strong>for everyone to see</strong>, perfectly written by one of our trusted Reviewers.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Trusted Feedback',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        With our trusted reviews for public, we also ship with trusted feedback <strong>for server admins</strong>. These feedback allows server admins and owners to further improve on their servers, without worrying about the public face in reviews.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Proven To Work',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Real reviews and testimonals has proven that Cordviews is a legitimate way to grow your server organically, instead of random users who only join to expect <strong>something else</strong> in return, not your <strong>server's distinctives</strong>.
       </>
     ),
   },
@@ -39,7 +33,6 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

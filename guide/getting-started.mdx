@@ -1,0 +1,31 @@
+---
+sidebar_position: 1
+---
+
+# Getting Started
+
+import { DiscordDefaultOptions, DiscordInteraction, DiscordMarkdown, DiscordMention, DiscordMessage, DiscordMessages, DiscordOptionsContext, DiscordReaction, DiscordReactions } from '@discord-message-components/react';
+import '@discord-message-components/react/dist/style.css';
+import defaultValue from './defaultValues.js';
+
+In this guide, you will learn how to get an existing server into Cordviews, from start to finish.
+
+:::info
+This guide assumes that you are a server administrator of the server you are trying to apply, with `ADMINISTRATOR` permission in Discord.
+:::
+:::warning
+You will need an invite key in order to apply your server for Cordviews. If you don't have one, try searching for one, asking for one, or wait until the beta is over, which will be soon.
+:::
+
+<DiscordOptionsContext.Provider value={defaultValue}>
+    <DiscordMessages>
+        <DiscordMessage profile="godder">
+            Welcome to <strong>Cordviews</strong>!
+            <div slot="reactions">
+                <DiscordReactions>
+                    <DiscordReaction name="blobreach" image="https://i.imgur.com/DUAI5Pu.png" count={8} active={true} />
+                </DiscordReactions>
+            </div>
+        </DiscordMessage>
+    </DiscordMessages>
+</DiscordOptionsContext.Provider>
