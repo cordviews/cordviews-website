@@ -35,7 +35,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <h3 className="center"><strong>Cordviews is also open source, encouraging transparency and endless possibilities, such as self-hosting.</strong></h3>
+        <h3 className="center"><strong>Cordviews is open source, encouraging transparency and endless possibilities, such as self-hosting.</strong></h3>
         <br />
       </main>
     </Layout>
