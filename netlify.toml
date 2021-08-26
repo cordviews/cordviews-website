@@ -5,10 +5,10 @@
 
 [[redirects]]
   from = "/discord"
-  to = "data:text/plain;base64,U29vblRN"
+  to = "data://text/plain;base64,U29vblRN"
   status = 301
 
 [[redirects]]
   from = "/invite"
-  to = "data:text/plain;base64,U29vblRN"
+  to = "data://text/plain;base64,U29vblRN"
   status = 301

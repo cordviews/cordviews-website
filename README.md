@@ -1,4 +1,7 @@
 # Cordviews Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd32785d-92a2-4b81-aeaf-7362ec125c1b/deploy-status)](https://app.netlify.com/sites/cordviews/deploys)
+
 Ever scrolled through Discord server listings not knowing which reviews to trust?
 
 Cordviews is a Discord platform for users of Discord to find a server to join with **trusted reviews**, and **trusted feedback** for server admins.
