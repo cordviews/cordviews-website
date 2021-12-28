@@ -16,9 +16,9 @@ module.exports = {
     announcementBar: {
       id: 'announcementBar',
       content:
-        "<div>Cordviews development has been temporarily paused. There is no current ETA on when it will be resumed.</div>",
-      backgroundColor: '#fca5a5',
-      textColor: '#ef4444',
+        "<div><strong>Cordviews development has been temporarily paused. There is no current ETA on when it will be resumed.</strong></div>",
+      backgroundColor: '#fecaca',
+      textColor: '#dc2626',
       isCloseable: false,
     },
     navbar: {
