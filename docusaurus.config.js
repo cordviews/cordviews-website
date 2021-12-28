@@ -16,10 +16,10 @@ module.exports = {
     announcementBar: {
       id: 'announcementBar',
       content:
-        "<div>Welcome to Cordviews! Here's a free <strong>one-time</strong> use invite key: <code>website</code></div>",
-      backgroundColor: '#5865f2',
-      textColor: '#fff',
-      isCloseable: true,
+        "<div>Cordviews development has been temporarily paused. There is no current ETA on when it will be resumed.</div>",
+      backgroundColor: '#fca5a5',
+      textColor: '#ef4444',
+      isCloseable: false,
     },
     navbar: {
       title: 'Cordviews',
